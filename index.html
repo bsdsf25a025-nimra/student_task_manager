@@ -2,20 +2,27 @@
 <html>
 <head>
     <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <h1>Student Task Manager</h1>
 
-    <input type="text" placeholder="Enter Task Title">
+    <input type="text" id="taskTitle" placeholder="Enter Task Title">
+    <br><br>
+    <textarea id="taskDesc" placeholder="Enter Task Description"></textarea>
+    <br><br>
+    <button id="addTaskBtn">Add Task</button>
 
     <br><br>
-
-    <textarea placeholder="Enter Task Description"></textarea>
+    <!-- Task 26 - Search Feature -->
+    <input type="text" id="searchInput" placeholder="Search tasks...">
 
     <br><br>
+    <ul id="taskList">
+        <!-- tasks will appear here -->
+    </ul>
 
-    <button>Add Task</button>
-
+    <script src="script.js"></script>
 </body>
 </html>
